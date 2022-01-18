@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    
+    <div class="ui">
+        <button onclick="randomBgColor()">Change Background Color</button>
+      <br>
+        <form>
+            <div class="form">
+              <label for="instructions" class="instructions">Change the background color and try to guess the RGB value.</label>
+              <hr>
+              <p class="label">Red Value</p>
+              <input id="R" class="slider" type="range" min="0" max="255" value="100" oninput="amountR.value=R.value" /><br>
+              <input id="amountR" type="number" value="100" min="0" max="255" oninput="R.value=amountR.value" />
+              <p class="label">Blue Value</p>
+              <input id="G" class="slider" type="range" min="0" max="255" value="100" oninput="amountG.value=G.value" /><br>
+              <input id="amountG" type="number" value="100" min="0" max="255" oninput="G.value=amountG.value" />
+              <p class="label">Green Value</p>
+              <input id="B" class="slider" type="range" min="0" max="255" value="100" oninput="amountB.value=B.value" /><br>
+              <input id="amountB" type="number" value="100" min="0" max="255" oninput="B.value=amountB.value" />
+            </div>
+          </form>
+      <button onclick="getUserInput(R, G, B)" class="guessBtn">Guess</button>
+    </div>
+</body>
+</html>

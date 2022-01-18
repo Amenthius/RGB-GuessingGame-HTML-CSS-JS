@@ -1,0 +1,40 @@
+.ui{
+    margin-top: 30rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    padding: 0;
+   }
+.instructions{
+    text-align: center;
+    color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    background-color: rgba(20, 19, 19, 0.521);
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    width: 25rem;
+}
+.form input{
+    width: 45px;
+    margin: auto;
+    height: 25px;
+    text-align: center;
+}
+input[type="range"] {
+    width:400px;
+  }
+
+  hr {
+    margin: 40px 0;
+  }
