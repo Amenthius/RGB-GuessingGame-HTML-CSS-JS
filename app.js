@@ -33,30 +33,37 @@ let number=[];
 
   console.log(number);
 
-  
+
 
 // Calculate user number with rgb array to check score.
-let redScore = (a,b) =>{
-  if (a>b){
-      return a-b;
-  } else {
-      return b-a;
+const redScore = (a,b) =>{
+  if (a > b){
+    return Math.abs(a - b);
+    console.log(`${a} is bigger than ${b}`);
+  } else{
+    return Math.abs(b - a);
+    console.log(`${b} is bigger than ${a}`);
   }
-};
-let greenScore = (a,b) =>{
-  if (a>b){
-      return a-b;
-  } else {
-      return b-a;
+}
+
+  function greenScore(a, b) {
+    if (a > b) {
+      console.log(`${a} is bigger than ${b}`);
+      return a - b;
+    } else {
+      console.log(`${b} is bigger than ${a}`);
+      return b - a;
+    }
   }
-};
-let blueScore = (a,b) =>{
-  if (a>b){
-      return a-b;
-  } else {
-      return b-a;
+  function blueScore(a, b) {
+    if (a > b) {
+      console.log(`${a} is bigger than ${b}`);
+      return a - b;
+    } else {
+      console.log(`${b} is bigger than ${a}`);
+      return b - a;
+    }
   }
-};
 
 let score = (a,b,c) =>{
   return (a + b + c) / 3;
@@ -73,4 +80,8 @@ console.log(blueResult);
 console.log(Math.floor(score(redResult, greenResult, blueResult)));
 
 number = [];
+redResult = 0;
+greenResult = 0;
+blueResult = 0;
+
 };
